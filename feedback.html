@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Travel Itinerary</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Simulate form submission and redirect
+            window.location.href = 'thank-you.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Feedback</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Feedback</h2>
+            <p>We value your feedback! Share your thoughts and experiences with us.</p>
+            <form id="feedback-form" onsubmit="handleFormSubmit(event)">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Travel Itinerary. All rights reserved.</p>
+    </footer>
+</body>
+</html>
